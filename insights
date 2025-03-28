@@ -6,10 +6,7 @@ import plotly.graph_objects as go
 import calendar
 import numpy as np
 def main():
-    st.set_page_config(
-        page_title="insights",
-        layout = "wide"
-    )
+
     st.title("Analytics and Insights")
     st.write("In this page we will perform analysis to gain insights from the filtered data. One thing is also to be noted that for analysis in same year, both start date and end date should have same year to be selected. ")
     data = pd.read_csv(r"C:\Users\Pratik\Desktop\borivali_AQI.csv")
