@@ -15,7 +15,7 @@ def main():
     
     st.title("Forecasting using Time Series model")
     st.write("Here, we will forecast pollutant levels for selected number of days. Well refined data will be used for forecasting, where we have removed majority of potential outliers. ARIMA (Autoregressive Integrated Moving Average) will be used as time series model.")
-    data = pd.read_csv(r"C:\Users\Pratik\Desktop\borivali_AQI.csv")
+    data = pd.read_csv(r"borivali_AQI.csv")
     today1 = datetime.date.today()
     drop = st.selectbox(label="choose pollutants",options=["PM2.5","PM10","NO2","SO2","CO","Ozone"])
     start_date = "2021-01-01"
