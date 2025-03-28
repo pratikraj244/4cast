@@ -4,7 +4,7 @@ import datetime
 def main():
     st.title("Dataset View")
     st.write("This is an original data that will be used, but we will also feature the data due to presence of missing values. You can also download it for your referrence.")
-    data = pd.read_csv(r"C:\Users\Pratik\Desktop\borivali_AQI.csv")
+    data = pd.read_csv(r"borivali_AQI.csv")
     st.dataframe(data,hide_index=True)
     st.header("About the data")
     st.write("Here we will describe the dataset. So this is a dataset of air pollutants containing from year 2021 to 2023. It also has columns such as date and pollutant levels such as PM2.5, PM10, NO2, SO2, CO and Ozone. Lets discuss those pollutants")
