@@ -4,7 +4,7 @@ st.set_page_config(
     layout="wide"
 )
 page = st.sidebar.radio("Go to", ["about","dataset", "insights", "prediction"])
-from 4cast.pages import about, dataset, insights, prediction
+from pages import about, dataset, insights, prediction
 # Load the appropriate page
 if page == "about":
     about.show()
