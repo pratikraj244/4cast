@@ -9,7 +9,7 @@ def main():
 
     st.title("Analytics and Insights")
     st.write("In this page we will perform analysis to gain insights from the filtered data. One thing is also to be noted that for analysis in same year, both start date and end date should have same year to be selected. ")
-    data = pd.read_csv(r"C:\Users\Pratik\Desktop\borivali_AQI.csv")
+    data = pd.read_csv(r"borivali_AQI.csv")
     col1, col2 = st.columns(2)
     today1 = datetime.date.today()
     drop = st.selectbox(label="choose pollutants",options=["PM2.5","PM10","NO2","SO2","CO","Ozone"])
